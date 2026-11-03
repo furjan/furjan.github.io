@@ -1,0 +1,5 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sessiz Bahçe Mahjong daveti</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Sessiz Bahçe Mahjong</h1><p>Bir arkadaşın seni bahçesine çağırıyor.</p>
+<div class="card"><p>Davet kodu</p><p class="code" id="code"></p><a class="btn" id="open" href="#">Oyunda aç</a><a class="btn" href="https://play.google.com/store/apps/details?id=com.furkanaykac.sessizbahce">Google Play'den indir</a><p>Oyunu kurduktan sonra bu sayfaya dön ya da kodu Arkadaşlar bölümüne yaz.</p></div>
+<script>var k=(new URLSearchParams(location.search).get('k')||'').replace(/[^A-Za-z0-9-]/g,'');document.getElementById('code').textContent=k.length===8?k.slice(0,4)+'-'+k.slice(4):k;var u='sessizbahce://arkadas/'+k;document.getElementById('open').href=u;if(k)location.href=u;</script>
+</main></body></html>
